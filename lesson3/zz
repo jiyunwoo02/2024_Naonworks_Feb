@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# 현재 디렉토리에 main.c 파일이 있는지 확인
+if [ -f "main.c" ]; then
+
+    # main.c 파일이 있다면 컴파일하여 실행 파일 생성
+    gcc -Wall -o main main.c
+    
+# -Wall 옵션: 모든 모호한 문법에 대한 결고 메시지 출력
+fi
